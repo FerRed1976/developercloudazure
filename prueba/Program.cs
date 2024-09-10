@@ -1,3 +1,4 @@
 ﻿// See https://aka.ms/new-console-template for more information
-Console.BackgroundColor = ConsoleColor.Blue;
-Console.WriteLine("Hola, World!");
+Console.Write("Congratulation");
+Console.Write(" ");
+Console.Write("Estoy aqui");
