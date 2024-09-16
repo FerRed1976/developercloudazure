@@ -27,9 +27,17 @@
 
 //Console.WriteLine($"Dice roll: {roll1} + {roll2} + {roll3} = {total}");
 
+
+//Ejercicio Reglas de negocio
 Random random = new Random();
 int daysUntilExpiration = random.Next(12);
 int discountPercentage = 0;
-
-if (daysUntilExpiration  =< 0)
-{Console.WriteLine ("Your subscription will expire soon. Renew now!!");}
+//    Console.WriteLine("Numero de diaspara expirar: " + daysUntilExpiration);
+if (daysUntilExpiration > 5)
+{ 
+    Console.WriteLine("Tu suscripcion est'a a punto de expirar. Renueva ahora!");
+}
+else if (daysUntilExpiration <= 10 && n>1);
+{
+    Console.WriteLine("Your subscription expires in _ days.Renew now and save 10%!");
+}
