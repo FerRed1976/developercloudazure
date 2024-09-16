@@ -27,7 +27,9 @@
 
 //Console.WriteLine($"Dice roll: {roll1} + {roll2} + {roll3} = {total}");
 
+Random random = new Random();
+int daysUntilExpiration = random.Next(12);
+int discountPercentage = 0;
 
-var total = 0
-int[] tirada=new int[3];
-Console.WriteLine(${tirada[i]};{(i<2 ? "+" : "")}")
+if (daysUntilExpiration  =< 0)
+{Console.WriteLine ("Your subscription will expire soon. Renew now!!");}
