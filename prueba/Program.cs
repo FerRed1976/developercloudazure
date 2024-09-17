@@ -1,3 +1,4 @@
 ﻿Random coin = new Random();
-int flip = coin.Next(0, 2);
-Console.WriteLine((flip == 0) ? "heads" : "tails");
+int tirada = coin.Next(0, 2);
+Console.WriteLine((tirada==0) ? "Cara" : "Cruz");
+Console.ReadKey();
