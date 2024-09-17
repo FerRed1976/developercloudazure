@@ -1,6 +1,3 @@
-﻿Console.WriteLine("a" == "a");
-Console.WriteLine("a" == "A");
-Console.WriteLine(1 == 2);
-
-string myValue = "a";
-Console.WriteLine(myValue == "a");
+﻿Random coin = new Random();
+int flip = coin.Next(0, 2);
+Console.WriteLine((flip == 0) ? "heads" : "tails");
