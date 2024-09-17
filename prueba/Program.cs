@@ -1,43 +1,49 @@
-﻿// See https://aka.ms/new-console-template for more information
-//Console.Write("Congratulation");
-// Console.Write(" ");
-//Console.Write("Estoy aqui");
+﻿Console.Clear();
 
-//RANDOM
-//var dados = new Random ();
-//var roll = dados.Next(1,7);
-//Console.WriteLine (roll);
+// Crear un array de nombres
+string[] alumnos = { "Sophia", "Andrew", "Emma", "Logan" };
 
-//Prueba de Evaluacion
-//int firstValue = 500;
-//int secondValue = 600;
-//int largerValue;
-//largerValue = Math.Max(firstValue,secondValue);
-//Console.WriteLine(largerValue);
+// Crear un array de arrays de enteros
+//Inicializar directamente
+int[][] notas = new int[4][];
+notas[0] = new int[] { 90, 86, 87, 98, 100 };
+notas[1] = new int[] { 92, 89, 81, 96, 90 };
+notas[2] = new int[] { 90, 85, 87, 98, 68 };
+notas[3] = new int[] { 90, 95, 87, 88, 96 };
 
-//If Else
-
-//Random dice = new Random();
-
-//int roll1 = dice.Next(1, 7);
-//int roll2 = dice.Next(1, 7);
-//int roll3 = dice.Next(1, 7);
-
-//int total = roll1 + roll2 + roll3;
-
-//Console.WriteLine($"Dice roll: {roll1} + {roll2} + {roll3} = {total}");
-
-
-//Ejercicio Reglas de negocio
-Random random = new Random();
-int daysUntilExpiration = random.Next(12);
-int discountPercentage = 0;
-//    Console.WriteLine("Numero de diaspara expirar: " + daysUntilExpiration);
-if (daysUntilExpiration > 5)
-{ 
-    Console.WriteLine("Tu suscripcion est'a a punto de expirar. Renueva ahora!");
-}
-else if (daysUntilExpiration <= 10 && n>1);
+var indiceDeAlumno = 0;
+decimal sumaDeValores = 0;
+// Mostrar los nombres y sus valores asociados
+foreach (var alumno in alumnos)
 {
-    Console.WriteLine("Your subscription expires in _ days.Renew now and save 10%!");
+    sumaDeValores = notas[indiceDeAlumno].Sum();
+
+    var media = sumaDeValores / (notas.Length + 1);
+    indiceDeAlumno++;
+    sumaDeValores = 0;
+
+
+    var notaEnLetra = "F";
+    if (media <= 59) { notaEnLetra = "F"; }
+    else if (media <= 62) { notaEnLetra = "D-"; }
+    else if (media <= 66) { notaEnLetra = "D"; }
+    else if (media <= 69) { notaEnLetra = "D+"; }
+    else if (media <= 72) { notaEnLetra = "C-"; }
+    else if (media <= 76) { notaEnLetra = "C"; }
+    else if (media <= 79) { notaEnLetra = "C+"; }
+    else if (media <= 82) { notaEnLetra = "B-"; }
+    else if (media <= 86) { notaEnLetra = "B"; }
+    else if (media <= 89) { notaEnLetra = "B+"; }
+    else if (media <= 92) { notaEnLetra = "A-"; }
+    else if (media <= 96) { notaEnLetra = "A"; }
+    else if (media <= 100) { notaEnLetra = "A+"; }
+    else { notaEnLetra = "Out Range"; }
+
+    Console.WriteLine($"Nombre: {alumno} \t Valores: {media} \t {notaEnLetra}");
+
 }
+
+Console.WriteLine("Press the Enter key to continue");
+Console.ReadLine();
+
+
