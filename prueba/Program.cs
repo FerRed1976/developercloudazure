@@ -1,24 +1,39 @@
-﻿int employeeLevel = 300;
-string employeeName = "John Smith";
+﻿
 
-string title = "";
+string sku = "01-MN-L";
 
-switch (employeeLevel)
+string[] product = sku.Split('-');
+
+string type = "";
+string color = "";
+string size = "";
+
+switch (producto)
 {
-    case 100:
-    case 200:
-        title = "Senior Associate";
-        break;
-    case 300:
-        title = "Manager";
-        break;
-    case 400:
-        title = "Senior Manager";
-        break;
-    default:
-        title = "Associate";
-        break;
+  case 02:
+  type = "Sweat shirt";
+  break ;
+  case 03:
+  type = "T-Shirt";
+  break;
+   
+  case "BL":
+  color = "Black";
+  break;
+  case "MN":
+  color = "Maroon"
+  break;
+  case"W":
+  color = "White"
+  break;
+
+  case "s":
+  size = "Small";
+  break;
+  case "M":
+  size = "Medium";
+  break;
+  case "L":
+  size = "Large";
 }
-
-Console.WriteLine($"{employeeName}, {title}");
-
+Console.WriteLine($"Product: {size} {color} {type}");
