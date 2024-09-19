@@ -89,8 +89,17 @@ foreach (var pallet in pallets)
 Array.Reverse(pallets);
 Console.WriteLine(pallets[0]);
  */
- string pangram = "The quick brown fox jumps over the lazy dog";
- char[] valueArray = value.ToCharArray();
-Array.Reverse(valueArray);
-string result = new string(valueArray);
-Console.WriteLine(result);
+using System.Reflection;
+using System.Runtime.CompilerServices;
+
+string pangram = "The quick brown fox jumps over the lazy dog";
+string[] resultado = pangram.Split(" ");
+//string [] reverse =new string [resultado.Length];
+
+string final = string.Empty;
+for (int i = 0; i < resultado.Length; i++);
+ {
+    final += string.Join ("", resultado[i].ToCharArray().Reverse())+"";
+
+ }
+pangram.Reverse();
