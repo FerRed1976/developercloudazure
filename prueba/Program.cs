@@ -77,8 +77,8 @@ Console.WriteLine($"Divide value2 by value3, display the result as a decimal: {r
 
 float result3 = value3 / value1;
 Console.WriteLine($"Divide value3 by value1, display the result as a float: {result3}"); */
-
-string[] pallets = { 1, "A11", "B12", "A13" };
+/* 
+string[] pallets = { "1", "A11", "B12", "A13" };
 
 Console.WriteLine("Sorted...");
 Array.Clear(pallets,0,2);
@@ -88,3 +88,9 @@ foreach (var pallet in pallets)
 }
 Array.Reverse(pallets);
 Console.WriteLine(pallets[0]);
+ */
+ string pangram = "The quick brown fox jumps over the lazy dog";
+ char[] valueArray = value.ToCharArray();
+Array.Reverse(valueArray);
+string result = new string(valueArray);
+Console.WriteLine(result);
