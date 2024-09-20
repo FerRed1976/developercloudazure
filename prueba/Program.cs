@@ -95,7 +95,7 @@ using System.Runtime.CompilerServices;
 string pangram = "The quick brown fox jumps over the lazy dog";
 string[] resultado = pangram.Split(" ");
 //string [] reverse =new string [resultado.Length];
-
+/* 
 string final = string.Empty;
 for (int i = 0; i < resultado.Length; i++);
  {
@@ -103,3 +103,16 @@ for (int i = 0; i < resultado.Length; i++);
 
  }
 pangram.Reverse();
+ */
+/* 
+using System.Globalization;
+
+ decimal price = 123.45m;
+int discount = 50;
+Console.WriteLine($"Price: {price:C} (Save {discount:C})");
+ */
+/*  decimal tax = .36785m;
+Console.WriteLine($"Tax rate: {tax:P}"); */
+
+string input = "Pad this";
+ Console.WriteLine(input.PadRight(18,'-'));
