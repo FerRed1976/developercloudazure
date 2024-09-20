@@ -89,11 +89,11 @@ foreach (var pallet in pallets)
 Array.Reverse(pallets);
 Console.WriteLine(pallets[0]);
  */
-using System.Reflection;
+/* using System.Reflection;
 using System.Runtime.CompilerServices;
 
 string pangram = "The quick brown fox jumps over the lazy dog";
-string[] resultado = pangram.Split(" ");
+string[] resultado = pangram.Split(" "); */
 //string [] reverse =new string [resultado.Length];
 /* 
 string final = string.Empty;
@@ -114,5 +114,115 @@ Console.WriteLine($"Price: {price:C} (Save {discount:C})");
 /*  decimal tax = .36785m;
 Console.WriteLine($"Tax rate: {tax:P}"); */
 
-string input = "Pad this";
- Console.WriteLine(input.PadRight(18,'-'));
+/* string input = "Pad this";
+ Console.WriteLine(input.PadRight(18,'-')); */
+
+/* 
+string customerName = "Ms. Barros";
+
+string currentProduct = "Magic Yield";
+int currentShares = 2975000;
+decimal currentReturn = 0.1275m;
+decimal currentProfit = 55000000.0m;
+
+string newProduct = "Glorious Future";
+decimal newReturn = 0.13125m;
+decimal newProfit = 63000000.0m;
+
+Console.WriteLine($"Dear {customerName},");
+Console.WriteLine($"As a customer of our {currentProduct} offering we are excited to tell you about a new financial product that would dramatically increase your return.\n");
+Console.WriteLine($"Currently, you own {currentShares:N} shares at a return of {currentReturn:P}.\n");
+Console.WriteLine($"Our new product, {newProduct} offers a return of {newReturn:P}.  Given your current volume, your potential profit would be {newProfit:C}.\n");
+
+Console.WriteLine("Here's a quick comparison:\n");
+
+string comparisonMessage = "";
+
+comparisonMessage = currentProduct.PadRight(20);
+comparisonMessage += String.Format("{0:P}", currentReturn).PadRight(10);
+comparisonMessage += String.Format("{0:C}", currentProfit).PadRight(20);
+
+comparisonMessage += "\n";
+comparisonMessage += newProduct.PadRight(20);
+comparisonMessage += String.Format("{0:P}", newReturn).PadRight(10);
+comparisonMessage += String.Format("{0:C}", newProfit).PadRight(20); */
+
+// Console.WriteLine(comparisonMessage);
+/* 
+string message = "Find what is (inside the parentheses)";
+
+int openingPosition = message.IndexOf('(');
+int closingPosition = message.IndexOf(')');
+
+Console.WriteLine(openingPosition);
+Console.WriteLine(closingPosition); */
+
+/* string message = "Help (find) the {opening symbols}";
+Console.WriteLine($"Searching THIS Message: {message}");
+char[] openSymbols = { '[', '{', '(' };
+int startPosition = 5;
+int openingPosition = message.IndexOfAny(openSymbols);
+Console.WriteLine($"Found WITHOUT using startPosition: {message.Substring(openingPosition)}");
+
+openingPosition = message.IndexOfAny(openSymbols, startPosition);
+Console.WriteLine($"Found WITH using startPosition {startPosition}:  {message.Substring(openingPosition)}"); */
+
+/* string data = "12345John Smith          5000  3  ";
+string updatedData = data.Remove(5, 25);
+Console.WriteLine(updatedData); */
+
+
+
+/* const string input = "<div><h2>Widgets &trade;</h2><span>5000</span></div>";
+
+string quantity = "";
+string output = "";
+
+
+// Extract the "quantity"
+const string openSpan = "<span>";
+const string closeSpan = "</span>";
+
+int quantityStart = input.IndexOf(openSpan) + openSpan.Length; // + length of <span> so index at end of <span> tag
+int quantityEnd= input.IndexOf(closeSpan);
+int quantityLength = quantityEnd - quantityStart;
+quantity = input.Substring(quantityStart, quantityLength);
+quantity = $"Quantity: {quantity}";
+
+// Set output to input, replacing the trademark symbol with the registered trademark symbol
+const string tradeSymbol = "&trade;";
+const string regSymbol = "&reg;";
+output = input.Replace(tradeSymbol, regSymbol);
+
+// Remove the opening <div> tag
+const string openDiv = "<div>";
+int divStart = output.IndexOf(openDiv);
+output = output.Remove(divStart, openDiv.Length);
+
+// Remove the closing </div> tag and add "Output:" to the beginning
+const string closeDiv = "</div>";
+int divCloseStart = output.IndexOf(closeDiv);
+output = "Output: " + output.Remove(divCloseStart, closeDiv.Length);
+
+Console.WriteLine(quantity);
+Console.WriteLine(output); */
+/* 
+using System.Net.Mail;
+
+Console.Clear();
+Console.WriteLine (DateTime.Now.ToString ("dd-MM-yy HH:mm:ss.fff"));
+Console.WriteLine (DateTime.UtcNow.ToLongTimeString());
+Console.WriteLine (DateTime.Today.ToLongDateString());
+
+ */
+/* 
+ Console.Clear ();
+ var hoy = DateTime.UtcNow;
+ Console.WriteLine (hoy.AddMonths(1)); */
+
+
+
+ Console.Clear();
+ var fecha = new DateTime (2024,05,31);
+Console.WriteLine (fecha.AddMonths(1).Ticks);
+
